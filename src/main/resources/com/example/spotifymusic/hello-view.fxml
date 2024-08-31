@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spotifymusic.HelloController">
+   <children>
+      <TextField fx:id="usernamefield" layoutX="236.0" layoutY="313.0" prefHeight="39.0" prefWidth="249.0" promptText="Username" />
+      <PasswordField fx:id="passwordfield" layoutX="236.0" layoutY="376.0" prefHeight="39.0" prefWidth="249.0" promptText="Password" />
+      <Button layoutX="306.0" layoutY="451.0" mnemonicParsing="false" onAction="#Login" prefHeight="46.0" prefWidth="109.0" text="Login" />
+      <Label layoutX="277.0" layoutY="521.0" text="you dont have an account?" />
+      <Button layoutX="306.0" layoutY="550.0" mnemonicParsing="false" onAction="#swichtoSignin" prefHeight="46.0" prefWidth="109.0" text="Signin" />
+
+      <Label fx:id="error" layoutX="246.0" layoutY="40.0" textFill="darkred" visible="false">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="222.0" fitWidth="346.0" layoutX="179.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../sp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

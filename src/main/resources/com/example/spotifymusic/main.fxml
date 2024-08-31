@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="790.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spotifymusic.maincontroller">
+   <children>
+      <Button fx:id="bt" layoutX="51.0" layoutY="286.0" mnemonicParsing="false" onAction="#swichtotaylor" prefHeight="120.0" prefWidth="124.0" style="-fx-background-image: url('tsp.jpg'); -fx-background-size: cover; -fx-background-repeat: no-repeat; -fx-background-position: center;" />
+      <Button fx:id="bw" layoutX="372.0" layoutY="286.0" mnemonicParsing="false" onAction="#swichtothew" prefHeight="120.0" prefWidth="124.0" style="-fx-background-image: url('thew.png'); -fx-background-size: cover; -fx-background-repeat: no-repeat; -fx-background-position: center;" />
+      <Button fx:id="bb" onAction="#swichtotb" layoutX="213.0" layoutY="286.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="124.0" style="-fx-background-image: url('tb.jpg'); -fx-background-size: cover; -fx-background-repeat: no-repeat; -fx-background-position: center;" />
+      <Button fx:id="brock" layoutX="406.0" layoutY="471.0" mnemonicParsing="false" onAction="#swichtor" prefHeight="150.0" prefWidth="150.0" style="-fx-background-image: url('r.png'); -fx-background-size: cover; -fx-background-repeat: no-repeat; -fx-background-position: center;" />
+      <Button fx:id="bpop" layoutX="175.0" layoutY="471.0" mnemonicParsing="false" onAction="#swichtopop" prefHeight="150.0" prefWidth="150.0" style="-fx-background-image: url('popm.png'); -fx-background-size: cover; -fx-background-repeat: no-repeat; -fx-background-position: center;" />
+      <Button fx:id="bc"  layoutX="534.0" layoutY="286.0" mnemonicParsing="false" onAction="#swichtoc" prefHeight="120.0" prefWidth="124.0" style="-fx-background-image: url('cold.jpg'); -fx-background-size: cover; -fx-background-repeat: no-repeat; -fx-background-position: center;" />
+      <Button layoutX="70.0" layoutY="187.0" mnemonicParsing="false" onAction="#searchbutton" text="Search" />
+      <TextField fx:id="search" layoutX="135.0" layoutY="187.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="596.0" layoutY="187.0" mnemonicParsing="false" onAction="#swichtouser" text="user" />
+   </children>
+</AnchorPane>

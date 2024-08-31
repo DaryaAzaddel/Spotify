@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="790.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spotifymusic.UserMenucontroller">
+   <children>
+      <Label layoutX="27.0" layoutY="38.0" text="Edit Profile">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="190.0" prefHeight="30.0" prefWidth="95.0" text="Username:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="240.0" prefHeight="30.0" prefWidth="95.0" text="Email:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="290.0" prefHeight="30.0" prefWidth="95.0" text="Name:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="340.0" prefHeight="30.0" prefWidth="95.0" text="Lastname:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="390.0" prefHeight="30.0" prefWidth="120.0" text="Date of birth:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfu" layoutX="130.0" layoutY="191.0" promptText="change username" />
+      <TextField fx:id="tfe" layoutX="130.0" layoutY="240.0" promptText="change email" />
+      <TextField fx:id="tfl" layoutX="130.0" layoutY="340.0" promptText="change lastname" />
+      <TextField fx:id="tfn" layoutX="130.0" layoutY="290.0" promptText="change name" />
+      <MenuButton fx:id="mby" layoutX="151.0" layoutY="390.0" mnemonicParsing="false" text="MenuButton">
+      </MenuButton>
+      <MenuButton fx:id="mbd" layoutX="398.0" layoutY="390.0" mnemonicParsing="false" text="MenuButton">
+      </MenuButton>
+      <MenuButton fx:id="mbm" layoutX="275.0" layoutY="390.0" mnemonicParsing="false" text="MenuButton">
+      </MenuButton>
+      <Label layoutX="27.0" layoutY="440.0" text="Gender:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="mbg" layoutX="151.0" layoutY="440.0" mnemonicParsing="false" text="MenuButton">
+      </MenuButton>
+      <Button layoutX="627.0" layoutY="23.0" mnemonicParsing="false" onAction="#back" text="back" />
+      <Button layoutX="317.0" layoutY="190.0" mnemonicParsing="false" onAction="#editu" text="edit" />
+      <Button layoutX="317.0" layoutY="340.0" mnemonicParsing="false" onAction="#editl" text="edit" />
+      <Button layoutX="317.0" layoutY="290.0" mnemonicParsing="false" onAction="#editn" text="edit" />
+      <Button layoutX="317.0" layoutY="240.0" mnemonicParsing="false" onAction="#edite" text="edit" />
+      <Button layoutX="274.0" layoutY="440.0" mnemonicParsing="false" onAction="#editg" text="edit" />
+      <Button layoutX="521.0" layoutY="390.0" mnemonicParsing="false" onAction="#editb" text="edit" />
+
+      <Label fx:id="error" layoutX="240.0" layoutY="30.0" textFill="darkred" visible="false">
+         <font>
+            <Font name="Bodoni MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="27.0" layoutY="528.0" mnemonicParsing="false" onAction="#swicthtopl" prefHeight="59.0" prefWidth="181.0" text="PlayList" />
+
+   </children>
+</AnchorPane>

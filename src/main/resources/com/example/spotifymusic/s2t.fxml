@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.media.MediaView?>
+<AnchorPane fx:id="pane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.spotifymusic.controls2"
+            prefHeight="790.0" prefWidth="720.0">
+    <children>
+        <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="41.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../bt.png" />
+            </image></ImageView>
+        <Label fx:id="lname" layoutX="333.0" layoutY="40.0" prefHeight="40.0" prefWidth="329.0" text="Label">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Label>
+        <Label fx:id="lyear" layoutX="333.0" layoutY="100.0" prefHeight="40.0" prefWidth="366.0" text="Label">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="lalbum" layoutX="333.0" layoutY="150.0" prefHeight="40.0" prefWidth="366.0" text="Label">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="lplays" layoutX="333.0" layoutY="200.0" prefHeight="40.0" prefWidth="366.0" text="Label">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="llyrics" layoutX="14.0" layoutY="433.0" prefHeight="326.0" prefWidth="676.0" text="Label" wrapText="true" />
+        <Button fx:id="playButton" layoutX="15.0" layoutY="375.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="40.0" prefWidth="103.0" text="play" />
+        <Button fx:id="pauseButton" layoutX="128.0" layoutY="375.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="40.0" prefWidth="103.0" text="pause" />
+        <Button layoutX="333.0" layoutY="267.0" mnemonicParsing="false" onAction="#add" prefHeight="40.0" prefWidth="103.0" text="add" />
+        <Button fx:id="resetButton" layoutX="240.0" layoutY="375.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="40.0" prefWidth="103.0" text="reset" />
+        <ProgressBar fx:id="songProgressBar" layoutX="66.0" layoutY="317.0" prefWidth="200.0" progress="0.0" />
+        <MediaView fx:id="mediaview" />
+        <Button layoutX="637.0" layoutY="380.0" mnemonicParsing="false" onAction="#back" text="back" />
+    </children>
+
+</AnchorPane>
